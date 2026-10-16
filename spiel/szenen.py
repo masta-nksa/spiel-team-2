@@ -4,7 +4,7 @@ import random
 import pygame
 
 import einstellungen as e
-from figuren import Spieler, Stein, Stern
+from figuren import Spieler, Stein, Stern, Steinrot
 
 
 @functools.cache
@@ -85,8 +85,15 @@ class SpielSzene(Szene):
     def neues_objekt(self):
         x = random.randint(20, e.BREITE - 20)
         tempo = 160 + self.zeit * 6  # wird mit der Zeit schneller
-        art = Stein if random.random() < 0.3 else Stern
+        if random.random() < 0.3 :
+            art = Stern 
+        else:
+            if random.random() < 0.5:
+                art = Stein
+            else:
+                art = Steinrot
         self.fallende.add(art(x, tempo))
+
 
     def verloren(self):
         self.spiel.rekord = max(self.spiel.rekord, self.punkte)

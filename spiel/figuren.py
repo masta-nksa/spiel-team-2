@@ -95,3 +95,15 @@ class Stein(FallendesObjekt):
 
     def beim_fangen(self, szene):
         szene.verloren()
+
+
+class Steinrot(FallendesObjekt):
+    """Beendet das Spiel."""
+
+    def bild_erstellen(self):
+        bild = pygame.Surface((50, 50), pygame.SRCALPHA)
+        pygame.draw.rect(bild, e.RED, bild.get_rect(), border_radius=8)
+        return bild
+
+    def beim_fangen(self, szene):
+        szene.verloren()
