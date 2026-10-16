@@ -19,7 +19,7 @@ if not getattr(pygame, "IS_CE", False):
         "  python -m pip uninstall -y pygame pygame-ce\n"
         "  python -m pip install -r requirements.txt"
     )
-
+ 
 if sys.platform != "emscripten":
     # Lokal: im Ordner dieser Datei arbeiten, damit "assets/..." immer gefunden wird,
     # egal von wo aus das Spiel gestartet wird. Im Browser ist das schon so.
@@ -77,4 +77,4 @@ async def main():
 
 
 asyncio.run(main())
-      
+ 
