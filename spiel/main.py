@@ -42,10 +42,10 @@ class Spiel:
         self.laeuft = True
         self.rekord = 0
         self.szene = MenueSzene(self)
-
+     
     def wechsle_zu(self, szene):
         self.szene = szene
-
+   
     def beenden(self):
         self.laeuft = False
 
