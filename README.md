@@ -65,6 +65,20 @@ python tutorial/schritt1_fenster.py
 Danach ist das Spiel in `spiel/` aufgeteilt (Schritt 5 im Tutorial: Szenen und eigene Dateien).
 Der Ordner `tutorial/` kommt nicht ins Online-Spiel, du kannst ihn behalten oder löschen.
 
+**Neu bei Klassen?** Ebenfalls in `tutorial/` liegen drei ganz einfache Programme mit hüpfenden Bällen.
+Sie zeigen nur die Grundideen: Klasse und Objekt, viele Objekte in einer Liste, Vererbung mit `super()`.
+Erklärungen und Aufgaben: **[OOP-Grundlagen auf der Website](https://masta-nksa.github.io/schere-stein-papier/beispiele/oop-grundlagen/)**.
+
+| Programm | Was du lernst |
+|---|---|
+| `tutorial/oop1_klasse.py` | Klasse und Objekt: ein Bauplan, zwei Bälle |
+| `tutorial/oop2_viele_objekte.py` | viele Objekte in einer Liste |
+| `tutorial/oop3_vererbung.py` | Vererbung, Überschreiben mit `super()`, Polymorphie |
+
+```bash
+python tutorial/oop1_klasse.py
+```
+
 ## Aufbau
 
 | Datei | Inhalt |
@@ -74,7 +88,7 @@ Der Ordner `tutorial/` kommt nicht ins Online-Spiel, du kannst ihn behalten oder
 | `spiel/figuren.py` | Spieler und fallende Objekte (Stern, Stein) |
 | `spiel/einstellungen.py` | Grösse, Tempo, Farben |
 | `spiel/assets/` | deine Bilder und Töne |
-| `tutorial/` | Schritt 1 bis 4 des Tutorials, je ein eigenes Programm |
+| `tutorial/` | Schritt 1 bis 4 des Tutorials und die drei OOP-Grundlagen, je ein eigenes Programm |
 | `.github/workflows/online-stellen.yml` | baut das Spiel und stellt es online |
 
 ## Was im Code steckt
